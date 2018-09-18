@@ -9,7 +9,7 @@ class WeatherParser:
     def __init__(self, file):
         self.file = file
 
-    def _get_content(self, url):
+    def get_content(self, url):
         """
         Grab the content from web page
         :param url: meteo.by site url
@@ -33,7 +33,7 @@ class WeatherParser:
         Get the weather forecast for one decade
         :param city: string as city name for which the forecast data will be parsed
         """
-        soup = self._get_content('https://meteo.by/{0}/'.format(city))
+        soup = self.get_content('https://meteo.by/{0}/'.format(city))
 
         # grab the forecast data from html tabs
         forecast_data = [[data.text.strip() for data in row_data.select('td')]
