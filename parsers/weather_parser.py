@@ -11,7 +11,7 @@ class WeatherParser:
 
     def get_content(self, url):
         """
-        Grab the content from web page
+        Grabs the content from web page
         :param url: meteo.by site url
         :return: page content as BeautifulSoup object
         """
@@ -30,7 +30,7 @@ class WeatherParser:
 
     def get_forecast_decade(self, city):
         """
-        Get the weather forecast for one decade
+        Gets the weather forecast for one decade
         :param city: string as city name for which the forecast data will be parsed
         """
         soup = self.get_content('https://meteo.by/{0}/'.format(city))
@@ -62,7 +62,7 @@ class WeatherParser:
 
     def _to_cli(self, dates, forecast):
         """
-        Print retrieved forecast data on the console
+        Prints retrieved forecast data
         :param dates: list of decade dates
         :param forecast: list of lists of forecast data for each time of day for one decade
         """
@@ -78,7 +78,7 @@ class WeatherParser:
 
     def _to_xl(self, dates, forecast, path):
         """
-        Write retrieved forecast data in .xlsx file
+        Writes retrieved forecast data in .xlsx file
         :param dates: list of decade dates
         :param forecast: list of lists of forecast data for each time of day for one decade
         :param path: .xlsx file path
