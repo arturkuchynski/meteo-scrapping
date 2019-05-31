@@ -1,5 +1,6 @@
 # web-scraping
-web scraping with python3.6
+Web scraping with python3.6
+Assignment in the course of training in Exposit LCC.
 
 #### Parsers:
 
@@ -12,11 +13,13 @@ Install dependencies via pip:
 
 `pip install -r requirements.txt`
 
-Run `python main.py ` 
+#### Usage
+
+Run `python3 main.py ` 
  
 and specify **the name of the city** for which you want to retrieve the weather forecast
 
-This method gives you a console output of data.
+This gives you a console output of forecast data.
     
 You can specify the file path if you want to save the data as a .xlsx table:
 
