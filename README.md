@@ -1,6 +1,6 @@
 # web-scraping
 Web scraping with python3.6
-Assignment in the course of training in Exposit LCC.
+Assignment in the course of training in Exposit LLC.
 
 #### Parsers:
 
